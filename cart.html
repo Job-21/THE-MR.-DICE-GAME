@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        .item{
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cart"></div>
+    <div onclick="add();" class="item"></div>
+    <div onclick="add();" class="item"></div>
+    <div onclick="add();" class="item"></div>
+    <div onclick="add();" class="item"></div>
+    <div onclick="add();" class="item"></div>
+    <div onclick="add();" class="item"></div>
+    <script>
+        let cat = document.getElementById("cart").innerHTML;
+        let item = document.getElementsByClassName("item");
+        let click=0;
+        let bool = false;
+        let count=0;
+        function add(){
+            if(bool==false){
+                count = document.getElementById("cart").innerHTML;
+                count+=1;
+                document.getElementById("cart").innerHTML=count;
+                bool=true;
+               
+            }
+            else{
+                count = document.getElementById("cart").innerHTML;
+                count-=1;
+                document.getElementById("cart").innerHTML=count;
+                bool=false;
+            }
+            count= document.getElementById("cart").innerHTML;
+        }
+        
+        
+    </script>
+</body>
+</html>
