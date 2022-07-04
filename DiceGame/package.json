@@ -1,0 +1,14 @@
+{
+  "name": "dicegame",
+  "version": "1.0.0",
+  "description": "roll dice and the greatest number wins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JOB ABE",
+  "license": "ISC",
+  "dependencies": {
+    "emoji-flags": "^1.3.0"
+  }
+}
